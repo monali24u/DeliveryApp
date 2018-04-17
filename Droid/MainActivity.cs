@@ -31,6 +31,21 @@ namespace deliveryApp.Droid
 
         void SignInButton_Click(object sender, System.EventArgs e)
         {
+            var email = emailEditText.Text;
+            var password = passwordEditText.Text;
+
+            var result = true; // = await User.Login(email, password);
+
+            if(result)
+            {
+                Toast.MakeText(this, "Welcome", ToastLength.Long).Show();
+                Intent intent = new Intent(this, typeof(TabsActivity));
+                StartActivity(intent);
+            }
+            else
+            {
+                Toast.MakeText(this, "Try again later", ToastLength.Long).Show();
+            }
         }
 
         void RegisterButton_Click(object sender, System.EventArgs e)

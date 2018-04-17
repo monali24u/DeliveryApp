@@ -50,6 +50,9 @@ namespace deliveryApp.Droid
 			// aapt resource value: 0x7f050000
 			public const int emailEditText = 2131034112;
 			
+			// aapt resource value: 0x7f050008
+			public const int mainTabLayout = 2131034120;
+			
 			// aapt resource value: 0x7f050001
 			public const int passwordEditText = 2131034113;
 			
@@ -86,6 +89,9 @@ namespace deliveryApp.Droid
 			
 			// aapt resource value: 0x7f030001
 			public const int Register = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Tabs = 2130903042;
 			
 			static Layout()
 			{
